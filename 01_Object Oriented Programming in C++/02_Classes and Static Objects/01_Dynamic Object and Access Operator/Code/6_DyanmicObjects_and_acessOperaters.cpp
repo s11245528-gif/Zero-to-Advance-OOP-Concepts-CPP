@@ -16,7 +16,7 @@ public:
 
 int main()
 {
-    //Alloacting the memory
+    //Allocating the memory
     algebra *sum = new algebra;
 
     //Arrow operaters pointing the members on the heap(->)
@@ -24,10 +24,10 @@ int main()
     sum->y = 4;
     sum->add = sum->x + sum->y;
     
-    //Derefernce and userd the dot opearter(.)
+    //Dereference and used the dot opearter(.)
     cout << "The sum of " << (*sum).x << " and " << (*sum).y << " = " << (*sum).add << endl;
     
-    //delloacting the memory
+    //deallocating the memory
     delete sum;
     sum=nullptr;
 
